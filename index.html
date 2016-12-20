@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <title></title>
     <script src="lib/docGhost.js" charset="utf-8"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
   </head>
   <body>
     <div>
@@ -12,10 +16,18 @@
     </div>
     <div class="listdiv">
       <ul>
-        <li>1</li>
-        <li>2</li>
+        <li id="hi" title="what">1</li>
+        <li>
+          <ol>
+            <li>a</li>
+            <li>b</li>
+            <li>c</li>
+          </ol>
+        </li>
         <li class="findme">3</li>
       </ul>
     </div>
+    <input id="check1" type="checkbox" checked="checked">
+    <label for="check1">Check me</label>
   </body>
 </html>
