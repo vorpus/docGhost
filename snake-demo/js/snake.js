@@ -80,7 +80,6 @@ class Board {
   snakeBounds () {
     let snakeHead = this.snake.segments[this.snake.segments.length-1].getCoord();
     if (snakeHead[0] > 19 || snakeHead[0] < 0 || snakeHead[1] > 19 || snakeHead[1] < 0) {
-      console.log('you lose');
       return true;
     }
   }
@@ -92,7 +91,6 @@ class Board {
     let suicide = false;
     snakeBody.forEach( (body) => {
       if (body.equals(snakeHead)) {
-        console.log('you suicided');
         suicide = true;
       }
     });
@@ -116,7 +114,6 @@ class Board {
     let appleCoord = new Coord(Math.floor(Math.random() * 20), Math.floor(Math.random() * 20));
     while( this.appleOverlapSnake(appleCoord) ) {
       appleCoord = new Coord(Math.floor(Math.random() * 20), Math.floor(Math.random() * 20));
-      console.log('position filled by snake. remaking');
     }
     this.apples.push(appleCoord);
   }

@@ -85,7 +85,7 @@ class View {
         this.board.snake.turn("S");
         break;
       default:
-        console.log('invalid key');
+        break;
     }
   }
 
