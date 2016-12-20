@@ -4,6 +4,21 @@
 
 docGhost is a lightweight JavaScript framework that allows users to manipulate DOM elements in a more succinct and intuitive way. This results in code that is both faster to write and easier to understand.
 
+### Demo
+
+To demonstrate the flexibility of the docGhost framework, I have written a simple Snake game which uses JavaScript for the game logic and docGhost to manipulate DOM elements and add event listeners for user input.
+
+![demo](/snake-demo/demo.gif)
+
+* In `main.js`, docGhost is used as a listener for the document's ready state. After it receives an affirmative, SnakeJS begins the game logic.
+
+* `append` is used to create each game cell
+
+* `on` listens for keyboard inputs (WASD or arrow keys!) and calls snake methods to move the snake accordingly
+
+* On each step (120ms), SnakeJS uses docGhost's `children` function to traverse the grid.
+
+* `addClass` and `removeClass` function change board colors depending on the snake's and the apple's position.
 
 ### API
 **$l** ([string, HTML element, function]) -
@@ -12,6 +27,8 @@ The wrapper `$l` is used to create `DOMNodeCollection`s from HTML elements. `$l`
 The following functions are available to `DOMNodeCollection`s
 
 **.html([string]) -** If given a `string`, will set the HTML content of each node to be equal to `string`. Otherwise, will return the HTML of the first element of the node collection.
+
+**.get(index) -** Returns the HTMLElement at `index` within the collection.
 
 **.empty() -** Clears the content of each node.
 
