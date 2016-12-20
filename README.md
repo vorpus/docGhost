@@ -6,6 +6,8 @@ docGhost is a lightweight JavaScript framework that allows users to manipulate D
 
 ### Demo
 
+[View live demo](https://vorpus.github.io/docGhost/snake-demo/)
+
 To demonstrate the flexibility of the docGhost framework, I have written a simple Snake game which uses JavaScript for the game logic and docGhost to manipulate DOM elements and add event listeners for user input.
 
 ![demo](/snake-demo/demo.gif)
