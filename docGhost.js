@@ -226,6 +226,7 @@
 	      element[eventKey] = [];
 	    });
 	  }
+	
 	}
 	
 	module.exports = DOMNodeCollection;

@@ -111,6 +111,7 @@ class DOMNodeCollection {
       element[eventKey] = [];
     });
   }
+
 }
 
 module.exports = DOMNodeCollection;

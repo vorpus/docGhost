@@ -105,9 +105,9 @@ To demonstrate the flexibility of the docGhost framework, I have written a simpl
 
 * In `main.js`, docGhost is used as a listener for the document's ready state. After it receives an affirmative, SnakeJS begins the game logic.
 
-* `append` is used to create each game cell
+* `append` is used to create each game cell.
 
-* `on` listens for keyboard inputs (WASD or arrow keys!) and calls snake methods to move the snake accordingly
+* `on` listens for keyboard inputs (WASD or arrow keys!) and calls snake methods to move the snake accordingly.
 
 * On each step (120ms), SnakeJS uses docGhost's `children` function to traverse the grid.
 
