@@ -20,6 +20,16 @@ Test it out by trying a quick console command!
 $l( () => alert('armed and ready!') )
 ```
 
+#### Compiling from Source
+
+To compile the source on your own machine, a Webpack configuration file is provided with entry and output files. Run the following commands in your console.
+
+```
+npm install webpack -g
+webpack
+```
+
+
 ### Example Usage
 
 With docGhost installed, it's easy start manipulating your HTML elements!
@@ -86,7 +96,8 @@ The following functions are available to `DOMNodeCollection`s
 
 ## Demo
 
-[View live demo](https://vorpus.github.io/docGhost/snake-demo/)
+[Live demo](https://vorpus.github.io/docGhost/snake-demo/)
+| [Source](https://github.com/vorpus/docGhost/tree/master/snake-demo/js)
 
 To demonstrate the flexibility of the docGhost framework, I have written a simple Snake game which uses JavaScript for the game logic and docGhost to manipulate DOM elements and add event listeners for user input.
 
