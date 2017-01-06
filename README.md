@@ -2,7 +2,7 @@
 
 ## Overview
 
-docGhost is a lightweight JavaScript library that allows users to manipulate DOM elements in a more succinct and intuitive way. This results in code that is both faster to write and easier to understand. Check out a demo of docGhost in action [here](https://vorpus.github.io/docGhost/snake-demo/).
+docGhost is a lightweight JavaScript library that allows users to manipulate DOM elements. This results in code that is both faster to write and easier to understand. Check out a demo of docGhost in action [here](https://vorpus.github.io/docGhost/snake-demo/).
 
 ## Getting Started
 ### Installation
@@ -59,6 +59,18 @@ $l.ajax({
 })
 ```
 
+### Under the hood
+docGhost accomplishes this by using wrapping vanilla JavaScript functions in a more intuitive syntax. For example, `attr` combines functionality of both `setAttribute` and `getAttribute`.
+```javascript
+attr(key, val) {
+  if (typeof val === 'string') {
+    this.each( (element) => element.setAttribute(key, val) );
+  } else {
+    return this.elements[0].getAttribute(key);
+  }
+}
+```
+
 
 ## API
 **`$l ([string, HTML element, function])` -**
@@ -96,12 +108,12 @@ The following functions are available to `DOMNodeCollection`s
 
 ## Demo
 
-[Live demo](https://vorpus.github.io/docGhost/snake-demo/)
-| [Source](https://github.com/vorpus/docGhost/tree/master/snake-demo/js)
+[Live demo](https://vorpus.github.io/docGhost-snakeDemo/)
+| [Source](https://github.com/vorpus/docGhost-snakeDemo/)
 
 To demonstrate the flexibility of the docGhost framework, I have written a simple Snake game which uses JavaScript for the game logic and docGhost to manipulate DOM elements and add event listeners for user input.
 
-![demo](/snake-demo/demo.gif)
+![demo](/lib/demo.gif)
 
 * In `main.js`, docGhost is used as a listener for the document's ready state. After it receives an affirmative, SnakeJS begins the game logic.
 
