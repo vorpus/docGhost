@@ -2,7 +2,7 @@ module.exports = {
   entry: "./main.js",
 
   output: {
-    filename: "../docGhost.js"
+    filename: "./docGhost.js"
   },
 
   devtool: 'source-map',

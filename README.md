@@ -7,7 +7,7 @@ docGhost is a lightweight JavaScript library that allows users to manipulate DOM
 ## Getting Started
 ### Installation
 
-It's easy to get started with docGhost! Just download the source here and add the following line to the `head` of your HTML document!
+It's easy to get started with docGhost! Just download the source here and add the following line to the `head` of your HTML document! Update `..path/to/` to your local docGhost.js.
 
 ```html
 <head>
@@ -113,7 +113,7 @@ The following functions are available to `DOMNodeCollection`s
 
 To demonstrate the flexibility of the docGhost framework, I have written a simple Snake game which uses JavaScript for the game logic and docGhost to manipulate DOM elements and add event listeners for user input.
 
-![demo](/lib/demo.gif)
+![demo](/images/demo.gif)
 
 * In `main.js`, docGhost is used as a listener for the document's ready state. After it receives an affirmative, SnakeJS begins the game logic.
 
